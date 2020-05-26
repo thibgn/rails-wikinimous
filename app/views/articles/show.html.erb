@@ -1,0 +1,13 @@
+<h2>una broma specifica 👇 </h2>
+<hr/>
+<div class="article">
+  <div class="article-info">
+  <%= link_to "<div class='title'>#{@article.title}</div>
+    <div class='content'>#{@article.content}</div>".html_safe,
+    article_path(@article) %>
+  </div>
+  <%= link_to '<div class="destroy"><i class="fas fa-trash-alt"></i></div>'.html_safe, article_path(@article),
+  method: :delete,
+  data: {confirm: 'estas suro chico ?'} %>
+  </div>
+  <hr/>

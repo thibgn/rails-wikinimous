@@ -1,0 +1,17 @@
+<h1>Las Bromas wiki</h1>
+
+<%= link_to 'Tengo una bromita 😋', :new_article, class: "new_bromita btn btn-secondary" %>
+
+<% @articles.each do |a| %>
+<div class="article">
+  <div class="article-info">
+  <%= link_to "<div class='title'>#{a.title}</div>
+    <div class='content'>#{a.content}</div>".html_safe,
+    article_path(a) %>
+  </div>
+  <%= link_to '<div class="destroy"><i class="fas fa-trash-alt"></i></div>'.html_safe, article_path(a),
+  method: :delete,
+  data: {confirm: 'estas suro chico ?'} %>
+  </div>
+  <hr/>
+<% end %>

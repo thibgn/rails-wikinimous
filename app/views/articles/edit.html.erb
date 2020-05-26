@@ -1,0 +1,7 @@
+<h1>Modifiar la bromita</h1>.
+
+<%= simple_form_for(@articles) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :content %>
+    <%= f.button :submit, class: "btn-primary" %>
+<% end %>
