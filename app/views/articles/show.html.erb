@@ -9,5 +9,11 @@
   <%= link_to '<div class="destroy"><i class="fas fa-trash-alt"></i></div>'.html_safe, article_path(@article),
   method: :delete,
   data: {confirm: 'estas suro chico ?'} %>
+  <%= link_to '<div class="edit"><i class="far fa-edit"></i></div>'.html_safe, :edit_article %>
+
+
+
+
+  
   </div>
   <hr/>

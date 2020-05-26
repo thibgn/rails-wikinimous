@@ -34,6 +34,9 @@ class ArticlesController < ApplicationController
   end
 
   def update
+    @article.update(article_params)
+
+    redirect_to :articles
   end
 
   private

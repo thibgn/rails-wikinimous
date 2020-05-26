@@ -1,7 +1,6 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-
 a { 
   text-decoration: none !important; 
   color: black !important;
@@ -27,14 +26,15 @@ a {
 
 .btn-secondary { color: white !important; }
 
-.new_article {
+.new_article, .edit_article {
   margin-top: 2rem;
   width: 60%;
   display: flex;
   flex-direction: column;
 }
 
-.new_article > input {
+.new_article > input,
+.edit_article > input {
   margin: .5rem;
 }
 
